@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+         int count = 0;
+     string necklace;
+     string bracelet;
+   
+     cin>>necklace;
+     cin>>bracelet;
+     
+    for(int i=0; i<necklace.length(); i++) {
+        for(int j=0; j<bracelet.length(); j++) {
+         
+           if(necklace[i]==bracelet[j]) {
+               count++;
+           }
+        }
+    }
+    cout<<count;
+}
